@@ -1,0 +1,68 @@
+/* GenderSelection.css */
+.gender-selection-container {
+  /* Use flexbox for layout */
+  position:absolute;
+  display: flex;
+  justify-content: space-around; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+  /* You can add `flex-direction: column;` if you want the buttons to stack vertically */
+  top: 525px;
+  left: 163px;
+  font-size: 16px;
+  
+}
+
+
+.gender-button {
+    /* Add shared button styling here */
+    display: inline-block;
+    padding: 15px;
+    margin: 0 35px;
+    border: none; /* black border */
+    cursor: pointer; /* Indicates the label is clickable */
+    user-select: none; /* Prevent text selection */
+    border-radius: 10px;
+    width: 100px;
+}
+.gender-button:hover {
+  background-color: #dbd4d4; /* The blue color you want on hover */
+    cursor: pointer; 
+}
+  .gender-button.selected {
+    background-color: #a1a1a1; /* Gray background for the selected button */
+    color: white;
+    border-color: #808080;
+    /* Other styles for selected state */
+  }
+  .more-genders.selected {
+    background-color: #a1a1a1; /* Gray background for the selected button */
+    color: white;
+    border-color: #808080;
+    /* Other styles for selected state */
+  }
+  .more-genders-dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: 200px; /* Set to match the width of your buttons or as needed */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2); /* Optional: for a slight shadow effect */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .more-genders-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #eee; /* Optional: for a separator effect */
+    cursor: pointer;
+  }
+  
+  .more-genders-dropdown li:hover {
+    background-color: #f0f0f0; /* Optional: hover effect */
+  }
+  
+  .more-genders-dropdown li:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+  }
+  

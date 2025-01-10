@@ -1,0 +1,591 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0099ff;
+    z-index: -2; /* Apply the blue background color here */
+}
+
+.registration {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content */
+    background-color: #0099ff; 
+    z-index: -2;/* Apply the blue background color here */
+}
+
+.registration .overlap-group-wrapper {
+    width: 100%; /* Full width */
+    max-width: 1280px; /* Maximum width */
+    height: 100%; /* Full height */
+    position: relative; /* If you need to position children absolutely within this */
+}
+
+.registration .overlap-group {
+    width: 100%; /* Full width */
+    position: relative;
+}
+
+/* .bottom-half-of-box and .top-half-box are not necessary if .registration fills the whole page with the blue color */
+
+
+.registration .bottom-half-of-box {
+    background-color: #0099ff;
+    height: 335px;
+    left: 0;
+    position: absolute;
+    top: 466px;
+    width: 1411px;
+    z-index: -2;
+}
+
+.registration .create-account {
+    background-color: #fbfbfb !important;
+    display: flex !important;
+    height: 47px !important;
+    left: 1048px !important;
+    position: absolute !important;
+    top: 693px !important;
+    width: 167px !important;
+}
+
+.registration .button-signin-instance {
+    color: #1e1e1e !important;
+    flex: 1 !important;
+    font-family: "Poppins-Black", Helvetica !important;
+    font-size: 13px !important;
+    font-style: unset !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.13px !important;
+    line-height: 92px !important;
+    margin-top: unset !important;
+    width: unset !important;
+}
+.registration .box {
+    position: fixed; /* Use fixed positioning to keep the line fixed on the viewport */
+    top: 87px; /* Align the line to the top of the viewport */
+    left: 0;
+    width: 100%; /* Make the line span the entire width of the viewport */
+    height: 2px;
+    background-color: #000;
+    z-index: 100;
+}
+.registration .vector,
+.registration .img {
+    width: 100vw; /* 100% of the viewport width */
+    height: auto; /* Adjust the height automatically */
+    position: absolute;
+    top: 458px; /* Adjust based on where you want the SVG to sit on the page */
+    left: 0;
+    z-index: -1; /* Make sure it's behind all other content */
+}
+
+
+.registration .show-me-title {
+    -webkit-text-stroke: 1px #000000;
+    color: #1e1e1e;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 61px;
+    left: 199px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    text-align: center;
+    top: 565px;
+    white-space: nowrap;
+}
+
+.registration .men-show-me-button {
+    background-color: #fbfbfb !important;
+    display: flex !important;
+    height: 47px !important;
+    left: 196px !important;
+    position: absolute !important;
+    top: 616px !important;
+    width: 130px !important;
+}
+
+.registration .man-gender-button {
+    background-color: #fbfbfb !important;
+    display: flex !important;
+    height: 47px !important;
+    left: 193px !important;
+    position: absolute !important;
+    top: 527px !important;
+    width: 130px !important;
+}
+
+
+
+.registration .add-genres-button {
+    background-color: #fbfbfb !important;
+    display: flex !important;
+    height: 47px !important;
+    left: 196px !important;
+    position: absolute !important;
+    top: 708px !important;
+    width: 146px !important;
+}
+
+.registration .music-genres-title {
+    -webkit-text-stroke: 1px #000000;
+    color: #1e1e1e;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 61px;
+    left: 195px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    text-align: center;
+    top: 652px;
+    white-space: nowrap;
+}
+
+.registration .woman-show-me-button {
+    background-color: #fbfbfb !important;
+    display: flex !important;
+    height: 47px !important;
+    left: 358px !important;
+    position: absolute !important;
+    top: 616px !important;
+    width: 130px !important;
+}
+
+.registration .everyone-show-me {
+    background-color: #fbfbfb !important;
+    display: flex !important;
+    height: 47px !important;
+    left: 527px !important;
+    position: absolute !important;
+    top: 616px !important;
+    width: 130px !important;
+}
+
+.registration .more-gender-button {
+    align-items: center;
+    background-color: #fffcfc;
+    border-radius: 100px;
+    display: flex;
+    gap: 10px;
+    height: 47px;
+    left: 527px;
+    overflow: hidden;
+    padding: 0px 13px;
+    position: absolute;
+    top: 527px;
+    width: 130px;
+}
+
+.registration .div {
+    color: transparent;
+    flex: 1;
+    font-family: "Poppins-Black", Helvetica;
+    font-size: 13px;
+    font-weight: 900;
+    height: 33px;
+    letter-spacing: 0.13px;
+    line-height: 92px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+/* Style for the label */
+.label {
+    color: #FFFFFF; /* Assuming you want the label text in white */
+    background-color: #007BFF; /* This is a blue background, for example */
+    border-radius: 5px; /* Rounded corners for the label */
+    padding: 5px 10px; /* Padding inside the label */
+    display: inline-block; /* Ensures the label does not take full width */
+    margin-bottom: 5px; /* Space between label and input box */
+}
+
+/* Style for the input field */
+.registration .text-wrapper {
+    font-size: 16px; /* Larger text size */
+    padding: 15px; /* Larger padding for a bigger field */
+    background-color: white; /* White background */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for the input field */
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+    width: 100%; /* Full width of the container */
+}
+
+/* Optional: Style for the input placeholder text */
+.registration .text-wrapper::placeholder {
+    color: #C0C0C0; /* Light color for placeholder text */
+}
+
+/* Style for the input field when it is in focus */
+.registration .text-wrapper:focus {
+    outline: none; /* Removes the outline */
+    border: none; /* Ensures there's no border on focus */
+}
+
+
+.registration .span {
+    color: #ffffff;
+    letter-spacing: 0.02px;
+}
+
+.registration .vector-stroke-2 {
+    height: 9.41px;
+    position: relative;
+    width: 6.12px;
+}
+
+.registration .woman-gender-button {
+    background-color: #fbfbfb !important;
+    display: flex !important;
+    height: 47px !important;
+    left: 358px !important;
+    position: absolute !important;
+    top: 527px !important;
+    width: 130px !important;
+}
+
+.registration .gender-title {
+    position:absolute;
+    -webkit-text-stroke: 1px #000000;
+    color: #1e1e1e;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 61px;
+    left: 199px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    text-align: center;
+    top: 474px;
+    white-space: nowrap;
+}
+.gender-container {
+    /* This will lay out the title and the selector side by side if you want that */
+    display: flex;
+    flex-direction: column; /* Stack them vertically */
+    align-items: flex-start; /* Align items to the start of the flex container */
+}
+.registration .top-half-box {
+    background-color: #0099ff;
+    height: 443px;
+    left: 65px;
+    position: absolute;
+    top: 1px;
+    width: 1280px;
+}
+
+.registration .profile-picture {
+    -webkit-text-stroke: 1px #000000;
+    color: #1e1e1e;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 61px;
+    left: 801px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    text-align: center;
+    top: 143px;
+    white-space: nowrap;
+}
+
+.registration .birthday-text-box {
+    align-items: center;
+    background-color: var(--white); /* Ensure --white is defined or use a fallback like #fff */
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    height: 65px; /* Increase this value to make the box taller */
+    left: 520px;
+    padding: 8px; /* Increase this value for more internal space */
+    position: absolute;
+    top: 415px;
+    width: 100px; /* Increase this value to make the box wider */
+    /* Increase this value for larger text, if necessary */
+    /* You might also want to adjust 'left' and 'top' if changing the size affects positioning */
+}
+
+
+.registration .text-wrapper-2 {
+    color: var(--gray);
+    flex: 1;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+}
+
+.registration .birthday-text-box-MM {
+    align-items: center;
+    background-color: var(--white);
+    border: none;
+    border-color: var(--gray);
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    height: 65px;
+    left: 190px;
+    padding: 8px;
+    position: absolute;
+    top: 415px;
+    width: 100px;
+}
+
+.registration .birthday-text-box-DD {
+    align-items: center;
+    background-color: var(--white);
+    border: none;
+    border-color: var(--gray);
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    height: 65px;
+    left: 350px;
+    padding: 8px;
+    position: absolute;
+    top: 415px;
+    width: 100px;
+}
+
+.registration .birthday-title {
+    -webkit-text-stroke: 1px #000000;
+    color: #1e1e1e;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 61px;
+    left: 199px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    text-align: center;
+    top: 372px;
+    white-space: nowrap;
+}
+
+.registration .email-address-text {
+    align-items: center;
+    background-color: var(--white);
+    border: none;
+    border-color: var(--gray);
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    height: 65px;
+    left: 190px;
+    padding: 8px;
+    position: absolute;
+    top: 300px;
+    width: 361px;
+}
+
+.registration .email-address-title {
+    -webkit-text-stroke: 1px #000000;
+    color: #1e1e1e;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 61px;
+    left: 199px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    text-align: center;
+    top: 262px;
+    white-space: nowrap;
+}
+
+.registration .first-name-text-box {
+    align-items: center;
+    background-color: var(--white);
+    border: none;
+    border-color: var(--gray);
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    height: 65px;
+    left: 190px;
+    padding: 8px;
+    position: absolute;
+    top: 195px;
+    width: 361px;
+}
+/* OnboardingPage.css */
+
+
+.gender-selection .gender-option {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #000; /* black border */
+    border-radius: 5px;
+    cursor: pointer; /* Indicates the label is clickable */
+    user-select: none; /* Prevent text selection */
+}
+
+.gender-selection .gender-option.selected {
+    background-color: #808080; /* gray background for selected */
+    color: white; /* optional: change text color when selected */
+    border-color: #808080; /* optional: change border color when selected */
+}
+
+.registration .cadence-title {
+    color: #ffffff;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 48px;
+    font-weight: 549;
+    height: 20px;
+    left: -260px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+
+    top: 10px;
+    width: 251px;
+
+}
+
+.registration .cadence-logo {
+    height: 68px;
+    left: -375px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    width: 8%;
+}
+
+.registration .vector-2 {
+    height: 1px;
+    left: 65px;
+    mix-blend-mode: darken;
+    object-fit: cover;
+    position: absolute;
+    top: 84px;
+    width: 1280px;
+}
+
+.registration .text-wrapper-3 {
+    -webkit-text-stroke: 1px #000000;
+    color: #1e1e1e;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    height: 61px;
+    left: 563px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    text-align: center;
+    top: 86px;
+    white-space: nowrap;
+}
+
+.registration .first-name-title {
+    -webkit-text-stroke: 1px #000000;
+    color: #1e1e1e;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 61px;
+    left: 199px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    white-space: nowrap;
+}
+
+.registration .profile-picture-placeholder {
+    background-color: #d9d9d9;
+    border: 3px dashed;
+    border-color: #000000;
+    border-radius: 15px;
+    height: 195px;
+    position: absolute;
+    width: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em; /* Adjust as necessary */
+    color: #000; /* Color of the '+' sign */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.registration .profile-picture-placeholder:hover {
+    background-color: #e0e0e0; /* Slightly lighter on hover */
+    /* Scale the '+' sign to be 10% larger */
+    transform: scale(1.1);
+}
+.registration .profile-picture-placeholder:hover::before {
+    transform: scale(1.1); /* Scale up the '+' sign */
+}
+.registration .profile-picture-placeholder::before {
+    content: '+';
+    /* Additional styling if needed */
+}
+.create-button {
+    position: absolute;
+    top: 705px;
+    left: 1095px;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 100px; /* Adjust as needed to fit your design */
+    border: 1px solid #007bff; /* Border color to match genres button */
+    background: white;
+    /* Text color to match genres button */
+    padding: 5px 10px; /* Adjust padding as needed */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+.create-button:hover {
+    background-color: #dbd4d4; /* The blue color you want on hover */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+}
+
+.about-me-frame {
+    position: absolute;
+    top: 500px;
+    left: 800px;
+}
+
+.about-me-title {
+    -webkit-text-stroke: 1px #000000;
+    color: #1e1e1e;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 61px;
+    left: 10px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    text-align: center;
+    top: -45px;
+    white-space: nowrap;
+}
+
+.about-me-textarea {
+    width: 420px;
+    height: 128px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    resize: none;
+}
+
+

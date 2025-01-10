@@ -1,0 +1,35 @@
+.primary-button {
+  align-items: center;
+  background-color: #11253e;
+  border-radius: 100px;
+  display: inline-flex;
+  gap: 8px;
+  height: 33px;
+  overflow: hidden;
+  padding: 0px 13px;
+  position: relative;
+}
+
+.primary-button:hover {
+  background-color: #30568b; /* Change to your desired hover color */
+}
+
+.primary-button .text {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica !important;
+  font-size: 13px !important;
+  font-style: unset !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.13px !important;
+  line-height: 92px !important;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 68px;
+}
+
+.primary-button .vector {
+  height: 9.41px;
+  position: relative;
+  width: 6.12px;
+}

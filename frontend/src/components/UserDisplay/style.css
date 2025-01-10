@@ -1,0 +1,468 @@
+.userdisplay {
+    background-color: #0099ff;
+    display: flex;
+}
+
+.userdisplay .userdisplay-wrapper {
+    background-color: var(--white);
+    height: 800px;
+    width: 1280px;
+}
+
+.userdisplay .userdisplay-overlap {
+    background-color: #0099ff;
+    height: 800px;
+    position: relative;
+
+}
+.userdisplay .userdisplay-group {
+    height: 729px;
+    left: 166px;
+    position: absolute;
+    top: 35px;
+    width: 731px;
+}
+.userdisplay .ProfileViewBackground {
+    background-color: #121212e8;
+    border-radius: 52px;
+    height: 729px;
+    position: relative;
+    width: 729px;
+    cursor: pointer; /* Shows an interactive cursor */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.controls {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-45%, -80%);
+}
+
+.userdisplay .ProfilePicture1 {
+    height: 693px;
+    left: 18px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 35px;
+    top: 18px;
+    width: 693px;
+}
+
+.userdisplay .NameBackGround {
+    background-color: #000000a6;
+    border-radius: 35px;
+    height: 96px;
+    left: 41px;
+    position: absolute;
+    top: 35px;
+    width: 428px;
+    z-index: 1;
+}
+.userdisplay .text-wrapper {
+    position: absolute;  /* Ensure it's positioned relative to the first positioned ancestor */
+    top: 12%;  /* Center vertically inside the NameBackground */
+    left: 20%;  /* Center horizontally inside the NameBackground */
+    transform: translate(-50%, -50%);  /* Offset the element to the center from its top-left corner */
+    color: white;  /* Assuming you want the text color to be white */
+    z-index: 2;  /* Ensure it appears above the NameBackground */
+    font-size: 24px;  /* Example size, adjust as necessary */
+    width: 100%;  /* Make the width span the entire parent */
+    text-align: center;  /* Center text horizontally */
+}
+.userdisplay .PhoneFrame {
+    height: 638px;
+    left: 740px;
+    position: absolute;
+    top: -7px;
+    width: 338px;
+}
+
+.userdisplay .PhoneBackGround {
+    background-color: #121212e8;
+    border-radius: 52px;
+    height: 729px;
+    left: 0;
+    position: absolute;
+    top: 9px;
+    width: 338px;
+
+}
+
+.userdisplay .frame {
+    height: 628px;
+    left: 47px;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 40px;
+    width: 245px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.userdisplay .BioFrame {
+    background-color: #242424;
+    border-radius: 8px;
+    height: 216px;
+    left: 1px;
+    position: absolute;
+    width: 243px;
+}
+
+.userdisplay .BioBackGround {
+    background-color: #242424;
+    border-radius: 8px;
+    height: 216px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 243px;
+}
+.userdisplay .BioTitle {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    height: 19px;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    top: 21px;
+    white-space: nowrap;
+    width: 142px;
+}
+.userdisplay .Bio {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 15px;
+    font-weight: 300;
+    height: 140px;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: absolute;
+    top: 52px;
+    width: 187px;
+}
+/*
+.userdisplay .GenreBox {
+    background-color: #242424;
+    border-radius: 8px;
+    height: 169px;
+    left: 1px;
+    position: absolute;
+    top: 250px;
+    width: 243px;
+}
+.userdisplay .GenreTitle {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    height: 19px;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    top: 0px;
+    white-space: nowrap;
+    width: 163px;
+}
+
+.userdisplay .Genre1Outline {
+    background-color: #242424;
+    border: 1px solid;
+    border-color: #c0c0c0;
+    border-radius: 10px;
+    height: 18px;
+    left: 17px;
+    position: absolute;
+    top: 57px;
+    width: 61px;
+}
+
+.userdisplay .Genre1 {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    height: 9px;
+    left: 12px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    top: -21px;
+    white-space: nowrap;
+    width: 34px;
+}
+
+.userdisplay .Genre2Outline {
+    background-color: #242424;
+    border: 1px solid;
+    border-color: #c0c0c0;
+    border-radius: 10px;
+    height: 18px;
+    left: 84px;
+    position: absolute;
+    top: 57px;
+    width: 61px;
+}
+
+.userdisplay .Genre2 {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    height: 9px;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    top: -21px;
+    white-space: nowrap;
+    width: 28px;
+}
+
+.userdisplay .Genre3Outline {
+    background-color: #242424;
+    border: 1px solid;
+    border-color: #c0c0c0;
+    border-radius: 10px;
+    height: 18px;
+    left: 17px;
+    position: absolute;
+    top: 90px;
+    width: 88px;
+}
+
+.userdisplay .Genre3 {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    height: 9px;
+    left: 15px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    top: -21px;
+    white-space: nowrap;
+    width: 56px;
+}
+
+.userdisplay .Genre4Outline {
+    background-color: #242424;
+    border: 1px solid;
+    border-color: #c0c0c0;
+    border-radius: 10px;
+    height: 18px;
+    left: 17px;
+    position: absolute;
+    top: 123px;
+    width: 83px;
+}
+
+.userdisplay .Genre4 {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    height: 9px;
+    left: 12px;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    top: -21px;
+    white-space: nowrap;
+    width: 59px;
+}
+*/
+
+.userdisplay .GenreBox {
+    background-color: #242424;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 10px;
+    width: 100%;
+    margin-top: 250px;
+}
+
+.userdisplay .GenreTitle {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif; /* Ensure font fallback */
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px; /* Space between title and genres */
+}
+
+.userdisplay .GenreOutline {
+    background-color: #242424;
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 5px;
+    padding: 2px 12px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Remove individual genre styles if all can be the same */
+
+.userdisplay .PlaylistImage {
+    height: 209px;
+    left: 1px;
+    object-fit: cover;
+    position: absolute;
+    top: 592px;
+    width: 243px;
+}
+.userdisplay .AlbumPicture {
+    height: 305px;
+left: 7px;
+position: absolute;
+top: 40px;
+width: 240px;
+}
+.userdisplay .AlbumImage {
+    height: 233px;
+left: 0;
+object-fit: cover;
+position: absolute;
+top: 0;
+width: 233px;
+}
+.userdisplay .ArtistName {
+    color: #e2e2e2;
+font-family: "Poppins", Helvetica;
+font-size: 20px;
+font-weight: 500;
+height: 53px;
+left: 0;
+letter-spacing: 0;
+line-height: 60.5px;
+position: absolute;
+top: 252px;
+white-space: nowrap;
+width: 220px;
+}
+
+.userdisplay .AlbumTitle {
+    color: #ffffff;
+font-family: "Poppins", Helvetica;
+font-size: 28px;
+font-weight: 500;
+height: 53px;
+left: 0;
+    letter-spacing: 0;
+    line-height: 60.5px;
+    position: absolute;
+    top: 226px;
+    white-space: nowrap;
+    width: 240px;
+}
+/* Extend the clickable area with a pseudo-element */
+/* Initial state of buttons is hidden */
+.prev-button,
+.next-button {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+/* Show the buttons when the parent div is hovered over */
+.ProfileViewBackground:hover .prev-button,
+.ProfileViewBackground:hover .next-button {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Rest of your button styling remains unchanged */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden; /* Ensures extended area does not affect layout */
+}
+
+.prev-button {
+    left: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.next-button {
+    right: 50px;
+    transform: translate(50%, -50%) rotate(180deg);
+    transform-origin: center center;
+}
+
+.prev-button svg,
+.next-button svg {
+    pointer-events: none; /* SVG does not capture clicks, allowing button itself to be clickable */
+}
+
+/* Extend the clickable area with a pseudo-element */
+.prev-button::before,
+.next-button::before {
+    content: '';
+    position: absolute;
+    top: -100px;  /* Extend the top clickable area */
+    bottom: -10px; /* Extend the bottom clickable area */
+    left: -10px;  /* Extend the left clickable area */
+    right: -10px; /* Extend the right clickable area */
+    z-index: -1; /* Ensure it's behind the SVG for visibility but clickable */
+}
+@keyframes shake {
+0%, 100% {
+    transform: translateX(0);
+}
+10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+}
+20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+}
+}
+
+.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.edit-info-button {
+    display: none;
+    position: absolute;
+    bottom: 20px; /* Position at the bottom within the PhoneBackGround */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    padding: 8px 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Primary blue */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s; /* Smooth transition effect */
+}
+
+.edit-info-button:hover {
+    transform: translateX(-50%) scale(1.1); /* Enlarge and center on hover */
+}

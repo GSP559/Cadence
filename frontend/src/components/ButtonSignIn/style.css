@@ -1,0 +1,37 @@
+.button-signin {
+  align-items: center;
+  background-color: #ffffff3d;
+  border-radius: 100px;
+  display: inline-flex;
+  gap: 8px;
+  height: 33px;
+  overflow: hidden;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.button-signin:hover {
+  background-color: #0000003d; /* Change to your desired hover color */
+}
+
+.button-signin .text-wrapper {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica !important;
+  font-size: 13px !important;
+  font-style: unset !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.13px !important;
+  line-height: 34px !important;
+  height: 33px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 49px;
+}
+
+.button-signin .vector-stroke {
+  height: 9.41px;
+  position: relative;
+  width: 6.12px;
+}

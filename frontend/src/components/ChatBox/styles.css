@@ -1,0 +1,51 @@
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-top: 22%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+}
+
+.user-message {
+    background-color: blue;
+    align-self: flex-end;
+    margin-right: 5%;
+}
+
+.other-message {
+    background-color: gray;
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+.send-message-form {
+    display: flex;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.send-message-form input {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.send-message-form button {
+    padding: 10px;
+    margin-left: 1%;
+    margin-top: 0.7%;
+}

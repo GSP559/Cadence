@@ -1,0 +1,58 @@
+.profile-picture-uploader {
+  width: 132px;
+  height: 195px;
+  border: 3px dashed #000;
+  border-radius: 15px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer; /* Indicate this is clickable */
+  position: relative; /* Make sure that absolute positioned children are relative to this */
+}
+
+/* Adjust as needed */
+.profile-picture-uploader:hover {
+  border: 3px dashed #FC8484; /* Change the border color on hover */
+  transform: scale(1.02); /* Optional: Slightly increase the size */
+}
+
+/* When the image is uploaded */
+.profile-picture-uploader.uploaded {
+  border: 3px solid #FC8484;
+   /* Green border for uploaded image */
+ 
+}
+
+/* Styles for the uploaded image */
+.profile-picture-uploader img {
+  width: 100%; /* Ensure the image covers the uploader area */
+  height: 100%;
+  object-fit: cover; /* Ensures the aspect ratio is maintained */
+}
+
+/* Hidden file input */
+.file-input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+  
+/* The plus icon and other content */
+.upload-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em; /* Adjust as necessary */
+  color: #000; /* Color of the '+' sign */
+  /* Full height and width of the parent */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

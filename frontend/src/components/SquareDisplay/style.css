@@ -1,0 +1,53 @@
+.user-card {
+  position: relative;
+  width: 500px; /* Adjust as necessary */
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: solid 12px black; /* Black border around the card */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Black background in case the image doesn't cover the whole area */
+}
+
+.music-image {
+  border-radius: 15px; /* Slightly less than the container to fit inside the border */
+  max-width: 105%;
+  max-height: 105%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -80%);
+}
+
+.control-btn {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 24px; /* Adjust as necessary */
+  margin: 0 10px; /* Spacing between buttons */
+  cursor: pointer;
+}
+
+.control-btn.love {
+  color: red;
+}
+
